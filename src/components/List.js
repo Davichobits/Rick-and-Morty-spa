@@ -20,8 +20,8 @@ export const List = () => {
   return (
     <div>
       <h2>Characters</h2>
-      {
-      loading ? 
+      <div className="row">
+      {loading ? 
       <div>Loading...</div> : 
       (
         characters.map((character)=>(
@@ -32,8 +32,8 @@ export const List = () => {
             image={character.image}
           />
           ))
-      )
-      }
+      )}
+      </div>
     </div>
   )
 }
